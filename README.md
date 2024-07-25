@@ -1,0 +1,1 @@
+# spribe-test-currency-rate
