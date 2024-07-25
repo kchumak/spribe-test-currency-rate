@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AddCurrencyFlowFunctionalTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AddCurrencyFlowFunctionalTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.example.testcurrencyrate.html">org.example.testcurrencyrate</a> &gt; AddCurrencyFlowFunctionalTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.235s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">add_currency_flow()</td>
+<td class="success">0.235s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>10:02:54.219 [Test worker] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+10:02:54.222 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-07-25T10:02:54.495+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-07-25T10:02:54.637+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2024-07-25T10:02:54.638+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2024-07-25T10:02:54.660+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 24.0.6
+  API Version: 1.43
+  Operating System: Docker Desktop
+  Total Memory: 7944 MB
+2024-07-25T10:02:54.692+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] tc.testcontainers/ryuk:0.7.0             : Creating container for image: testcontainers/ryuk:0.7.0
+2024-07-25T10:02:54.800+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.t.utility.RegistryAuthLocator          : Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2024-07-25T10:02:54.869+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] tc.testcontainers/ryuk:0.7.0             : Container testcontainers/ryuk:0.7.0 is starting: c70c1605fc023053c3ab41daa09a6d7e436cfa5d362c3ea81004bb1222aeade7
+2024-07-25T10:02:55.025+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] tc.testcontainers/ryuk:0.7.0             : Container testcontainers/ryuk:0.7.0 started in PT0.332887S
+2024-07-25T10:02:55.028+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-07-25T10:02:55.028+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2024-07-25T10:02:55.029+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2024-07-25T10:02:55.029+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] tc.postgres:16-alpine                    : Creating container for image: postgres:16-alpine
+2024-07-25T10:02:55.045+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] tc.postgres:16-alpine                    : Container postgres:16-alpine is starting: 47208649c5fdb6207574189b0c54b6d22949fe1708e3a241c58b5ece12e89a17
+2024-07-25T10:02:55.937+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] tc.postgres:16-alpine                    : Container postgres:16-alpine started in PT0.907991S
+2024-07-25T10:02:55.938+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] tc.postgres:16-alpine                    : Container is started (JDBC URL: jdbc:postgresql://localhost:56548/integration-tests-db?loggerLevel=OFF)
+2024-07-25T10:02:55.947+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.AddCurrencyFlowFunctionalTest      : Starting AddCurrencyFlowFunctionalTest using Java 17.0.6 with PID 99752 (started by kchumak in /Users/kchumak/Projects/test-currency-rate)
+2024-07-25T10:02:55.947+02:00 DEBUG 99752 --- [test-currency-rate] [    Test worker] o.e.t.AddCurrencyFlowFunctionalTest      : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-07-25T10:02:55.947+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.AddCurrencyFlowFunctionalTest      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-07-25T10:02:56.357+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25T10:02:56.384+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2024-07-25T10:02:56.490+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=95974e6f-7347-3c90-a48d-38143a7bffbd
+2024-07-25T10:02:57.084+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-25T10:02:57.197+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58be583e
+2024-07-25T10:02:57.198+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-25T10:02:57.274+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.database                       : Set default schema name to public
+2024-07-25T10:02:57.409+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.changelog                      : Reading resource: db/changelog/changes/v001_create_currency_table.sql
+2024-07-25T10:02:57.413+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.changelog                      : Reading resource: db/changelog/changes/v002_create_exchange_rate_table.sql
+2024-07-25T10:02:57.437+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2024-07-25T10:02:57.456+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2024-07-25T10:02:57.492+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2024-07-25T10:02:57.493+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.command                        : Using deploymentId: 1894577493
+2024-07-25T10:02:57.497+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2024-07-25T10:02:57.500+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/changes/v001_create_currency_table.sql::raw::includeAll
+2024-07-25T10:02:57.508+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.changelog                      : Custom SQL executed
+2024-07-25T10:02:57.509+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/changes/v001_create_currency_table.sql::raw::includeAll ran successfully in 8ms
+2024-07-25T10:02:57.514+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/changes/v002_create_exchange_rate_table.sql::raw::includeAll
+2024-07-25T10:02:57.518+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.changelog                      : Custom SQL executed
+2024-07-25T10:02:57.519+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/changes/v002_create_exchange_rate_table.sql::raw::includeAll ran successfully in 5ms
+2024-07-25T10:02:57.523+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.util                           : UPDATE SUMMARY
+2024-07-25T10:02:57.524+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.util                           : Run:                          2
+2024-07-25T10:02:57.524+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.util                           : Previously run:               0
+2024-07-25T10:02:57.524+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.util                           : Filtered out:                 0
+2024-07-25T10:02:57.524+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.util                           : -------------------------------
+2024-07-25T10:02:57.524+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.util                           : Total change sets:            2
+2024-07-25T10:02:57.524+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.util                           : Update summary generated
+2024-07-25T10:02:57.525+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.command                        : Update command completed successfully.
+2024-07-25T10:02:57.525+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 2
+2024-07-25T10:02:57.528+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.lockservice                    : Successfully released change log lock
+2024-07-25T10:02:57.529+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] liquibase.command                        : Command execution complete
+2024-07-25T10:02:57.582+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25T10:02:57.611+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25T10:02:57.632+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-25T10:02:57.699+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25T10:02:57.726+02:00  WARN 99752 --- [test-currency-rate] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25T10:02:58.083+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25T10:02:58.085+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25T10:02:58.287+02:00  WARN 99752 --- [test-currency-rate] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25T10:02:58.469+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-07-25T10:02:58.469+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-07-25T10:02:58.470+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-07-25T10:02:58.509+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.AddCurrencyFlowFunctionalTest      : Started AddCurrencyFlowFunctionalTest in 4.265 seconds (process running for 4.891)
+2024-07-25T10:02:58.511+02:00 DEBUG 99752 --- [test-currency-rate] [    Test worker] o.e.t.s.ExchangeRateCacheInitializer     : Warming up exchange rate cache....
+2024-07-25T10:02:58.511+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Refreshing exchange rates...
+2024-07-25T10:02:58.511+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Refreshing exchange rates finished
+2024-07-25T10:02:58.669+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : New currency added, rates appear soon: EUR.
+2024-07-25T10:02:58.669+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Refreshing exchange rates...
+2024-07-25T10:02:58.670+02:00 DEBUG 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Refreshing rates for currency EUR, timestamp 2024-07-25T08:02:58.670130Z
+2024-07-25T10:02:58.670+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Obtaining exchange rate for currency EUR...
+2024-07-25T10:02:58.677+02:00 DEBUG 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Received rates for currency EUR: {AMD=421.478335, USD=1.085513, AFN=76.915373, EUR=1, AED=3.986648, ALL=100.328398, ANG=1.943118}...
+2024-07-25T10:02:58.689+02:00 DEBUG 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Rates for currency EUR successfully saved
+2024-07-25T10:02:58.691+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Refreshing exchange rates finished
+2024-07-25T10:02:58.697+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : New currency added, rates appear soon: USD.
+2024-07-25T10:02:58.697+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Refreshing exchange rates...
+2024-07-25T10:02:58.698+02:00 DEBUG 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Refreshing rates for currency EUR, timestamp 2024-07-25T08:02:58.698349Z
+2024-07-25T10:02:58.698+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Obtaining exchange rate for currency EUR...
+2024-07-25T10:02:58.698+02:00 DEBUG 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Received rates for currency EUR: {AMD=421.478335, USD=1.085513, AFN=76.915373, EUR=1, AED=3.986648, ALL=100.328398, ANG=1.943118}...
+2024-07-25T10:02:58.701+02:00 DEBUG 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Rates for currency EUR successfully saved
+2024-07-25T10:02:58.702+02:00 DEBUG 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Refreshing rates for currency USD, timestamp 2024-07-25T08:02:58.702869Z
+2024-07-25T10:02:58.702+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Obtaining exchange rate for currency USD...
+2024-07-25T10:02:58.703+02:00 DEBUG 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Received rates for currency USD: {AMD=387.767941, USD=1, AFN=70.708628, AED=3.6725, ALL=92.228462, ANG=1.79, EUR=0.921224}...
+2024-07-25T10:02:58.707+02:00 DEBUG 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Rates for currency USD successfully saved
+2024-07-25T10:02:58.708+02:00  INFO 99752 --- [test-currency-rate] [    Test worker] o.e.t.service.InMemoryExchangeRateCache  : Refreshing exchange rates finished
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at Jul 25, 2024, 10:02:58 AM</p>
+</div>
+</div>
+</body>
+</html>
